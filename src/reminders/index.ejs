@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <%- require('../partials/goBack/goBack.ejs')() %>
+      <main>
+        <div class="d-flex flex-column align-items-center">
+          <h4>Routines</h4>
+          <div class="row">
+            <div class="col-10 offset-1 text-center">
+              Smriti can do multiple things with one command.Customise Routines
+              or create new ones from scratch
+            </div>
+          </div>
+
+          <div class="badge badge-pill">+ Add a routine</div>
+          <div class="w-100">
+            <ul id="reminders-list">
+              <li>
+                <div class="d-flex">
+                  <img src="/assets/reminder-task-icon.svg" alt="" />
+                  <div class="ml-2">
+                    <span style="font-size: 12px; font-weight: bold">
+                      Medicines</span
+                    >
+                    <p style="font-size: 10px">Reminds you to take medicines</p>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>

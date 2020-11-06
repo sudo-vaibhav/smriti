@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <%- require('../partials/goBack/goBack.ejs')() %>
+      <main>
+        <div class="row py-5 align-items-center flex-column">
+          <img src="/assets/pin-placeholder.png" alt="" />
+          <h5 class="my-3">Enter the pin</h5>
+          <div class="my-2"><img src="/assets/pin-entry.svg" alt="" /></div>
+          <div class="container mt-5">
+            <div class="row mt-5 pt-5" id="input-keys-container">
+              <div class="col-4 digit-button">1</div>
+              <div class="col-4 digit-button">2</div>
+              <div class="col-4 digit-button">3</div>
+              <div class="col-4 digit-button">4</div>
+              <div class="col-4 digit-button">5</div>
+              <div class="col-4 digit-button">6</div>
+              <div class="col-4 digit-button">7</div>
+              <div class="col-4 digit-button">8</div>
+              <div class="col-4 digit-button">9</div>
+              <div class="col-4" id="backspace-button">
+                <img src="/assets/backspace.svg" alt="" />
+              </div>
+              <div class="col-4 digit-button">0</div>
+              <div class="col-4"></div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+    <script>
+      let pin = '';
+      const digits = document.querySelectorAll('.digit-button');
+      digits.forEach((digit) => {
+        digit.addEventListener('click', () => {
+          const digitValue = digit.innerText;
+          pin = pin + digitValue;
+          console.log(pin);
+        });
+      });
+      document
+        .querySelector('#backspace-button')
+        .addEventListener('click', () => {
+          if (pin.length > 0) {
+            pin = pin.substring(0, pin.length - 1);
+          }
+          console.log(pin);
+        });
+    </script>
+  </body>
+</html>

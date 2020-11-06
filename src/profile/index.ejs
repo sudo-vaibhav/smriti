@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <%- require('../partials/goBack/goBack.ejs')() %>
+      <main>
+        <div class="d-flex align-items-center flex-column">
+          <img src="/assets/ladki.png" alt="" />
+          <h5 class="font-weight-bold">Your Name Here</h5>
+          <h6>A brief description about him</h6>
+          <span class="badge badge-pill">The Medical Condition</span>
+          <span class="badge badge-pill">Suggestions</span>
+
+          <ul id="profile-options-menu">
+            <li class="d-flex">
+              <img src="/assets/reminders-icon.svg" alt="" />
+              <div class="profile-option-wrapper">
+                <div class="profile-option-title">Reminder</div>
+                <div class="profile-option-description">
+                  Create or manage reminder
+                </div>
+              </div>
+            </li>
+            <li class="d-flex">
+              <img src="/assets/add-members-icon.svg" alt="" />
+              <div class="profile-option-wrapper">
+                <div class="profile-option-title">Members</div>
+                <div class="profile-option-description">
+                  Add or manage people whom your patient knows
+                </div>
+              </div>
+            </li>
+            <li class="d-flex">
+              <img src="/assets/address-icon.svg" alt="" />
+              <div class="profile-option-wrapper">
+                <div class="profile-option-title">Address</div>
+                <div class="profile-option-description">
+                  Add location where the patient resides
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>
