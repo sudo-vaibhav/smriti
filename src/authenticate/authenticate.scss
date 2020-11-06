@@ -1,0 +1,15 @@
+@import '../scss/colors.scss';
+#input-keys-container {
+  > .col-4 {
+    padding: 1rem;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.25rem;
+  }
+}
+
+#pin-entry {
+  .filled {
+    fill: $primary;
+  }
+}
