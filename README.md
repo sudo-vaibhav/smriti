@@ -21,7 +21,7 @@ ____
 
 Alzheimer's disease is one of those diseases which hasn’t seen any cure since the past 100 years , scientist havent found a cure till now the only means to do something which will bring a significant change in community is by providing some aid . The main reason people suffer from alzheimer’s disease is that as we grow old the blood flow to our brain is reduced and hence the blood cells do not recieve ample amount of blood and due to this blood cells start decaying and rupturing our brain cells and hence there it affects the folds of our brain and due to that the memory retention capacity is decreased and therefore we might even stop remembering things which we did this morning 
 <a href="https://ibb.co/Sr9YxcX"><img src="https://i.ibb.co/5Ffp9kW/alzheimers-association-1516726299-926.jpg" alt="alzheimers-association-1516726299-926" border="0"></a><br />
-
+<br>
 <a target='_blank' href='https://poetandpoem.com/John-Keble/Holy-Matrimony'>holy matrimony lyrics</a><br />
 ________
 ##### Statistical Analysis
