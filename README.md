@@ -1,4 +1,4 @@
-# smriti
+# Smriti
 <a href="https://ibb.co/zH7WNpB"><img src="https://i.ibb.co/Dg8PLhv/Frame-3.png" alt="Frame-3" border="0"  width="2500"></a>
 ### Table of Contents
 * About the Product
