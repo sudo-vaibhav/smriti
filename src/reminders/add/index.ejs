@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <%- require('../../partials/commonHeadBeforeEnd/commonHeadBeforeEnd.ejs')()
+    %>
+  </head>
+  <body>
+    <div class="container">
+      <%- require('../../partials/goBack/goBack.ejs')() %>
+
+      <main>
+        <h5 class="mt-3">Set Reminder</h5>
+        <form id="add-form">
+          <div class="input-group">
+            <label for="">Title:</label>
+            <input type="text" required />
+          </div>
+
+          <div class="input-group">
+            <label for="">Time:</label>
+            <input type="time" required />
+          </div>
+
+          <div class="input-group">
+            <label for="">Description of the reminder:</label>
+            <textarea name="" id="" cols="30" rows="10" required></textarea>
+          </div>
+          <div class="d-flex justify-content-end mt-4">
+            <button class="btn btn-outline-primary btn-lg px-4">Cancel</button>
+            <button class="btn btn-primary btn-lg px-4 ml-3">Save</button>
+          </div>
+        </form>
+      </main>
+    </div>
+  </body>
+</html>

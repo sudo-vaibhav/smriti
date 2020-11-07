@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <%- require('../partials/commonHeadBeforeEnd/commonHeadBeforeEnd.ejs')() %>
   </head>
   <body>
     <div class="container">
@@ -12,7 +13,29 @@
         <div class="row py-5 align-items-center flex-column">
           <img src="/assets/pin-placeholder.png" alt="" />
           <h5 class="my-3">Enter the pin</h5>
-          <div class="my-2"><img src="/assets/pin-entry.svg" alt="" /></div>
+          <div class="my-2">
+            <svg
+              width="144"
+              id="pin-entry-svg"
+              height="18"
+              viewBox="0 0 144 18"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g id="pin-entry">
+                <circle id="pin-1" cx="9" cy="9" r="8.5" stroke="#1676EC" />
+                <circle id="pin-2" cx="51" cy="9" r="8.5" stroke="#1676EC" />
+                <circle id="pin-3" cx="93" cy="9" r="8.5" stroke="#1676EC" />
+                <circle id="pin-4" cx="135" cy="9" r="8.5" stroke="#1676EC" />
+              </g>
+            </svg>
+            <div
+              class="mt-3 text-danger invisible"
+              id="incorrect-password-prompt"
+            >
+              Incorrect password
+            </div>
+          </div>
           <div class="container mt-5">
             <div class="row mt-5 pt-5" id="input-keys-container">
               <div class="col-4 digit-button">1</div>
@@ -35,13 +58,46 @@
       </main>
     </div>
     <script>
+      const pinEntry = document.querySelector('#pin-entry');
+      const incorrectPasswordPrompt = document.querySelector(
+        '#incorrect-password-prompt'
+      );
       let pin = '';
+      function updatePinView() {
+        for (let i = 1; i <= 4; i++) {
+          const pinCircle = pinEntry.querySelector(`#pin-${i}`);
+
+          if (pin.length >= i) {
+            pinCircle.setAttribute('fill', '#1676EC');
+          } else {
+            pinCircle.setAttribute('fill', '');
+          }
+        }
+        console.log(pin);
+        if (pin.length === 4) {
+          if (pin == '0420') {
+            window.location.href = '/profile';
+          } else {
+            pin = '';
+            for (let i = 1; i <= 4; i++) {
+              const pinCircle = pinEntry.querySelector(`#pin-${i}`);
+              pinCircle.setAttribute('fill', '');
+            }
+            incorrectPasswordPrompt.classList.remove('invisible');
+            setTimeout(() => {
+              incorrectPasswordPrompt.classList.add('invisible');
+            }, 2000);
+          }
+        }
+      }
       const digits = document.querySelectorAll('.digit-button');
       digits.forEach((digit) => {
         digit.addEventListener('click', () => {
-          const digitValue = digit.innerText;
-          pin = pin + digitValue;
-          console.log(pin);
+          if (pin.length < 4) {
+            const digitValue = digit.innerText;
+            pin = pin + digitValue;
+          }
+          updatePinView();
         });
       });
       document
@@ -50,8 +106,10 @@
           if (pin.length > 0) {
             pin = pin.substring(0, pin.length - 1);
           }
-          console.log(pin);
+
+          updatePinView();
         });
+      //   });
     </script>
   </body>
 </html>

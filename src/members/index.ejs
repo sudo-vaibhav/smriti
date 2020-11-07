@@ -11,15 +11,14 @@
       <%- require('../partials/goBack/goBack.ejs')() %>
       <main>
         <div class="d-flex flex-column align-items-center">
-          <h4>Routines</h4>
+          <h4>Members</h4>
           <div class="row">
             <div class="col-10 offset-1 text-center">
-              Smriti can do multiple things with one command.Customise Routines
-              or create new ones from scratch
+              A plave to store all the details of the member whom your patient
+              must know
             </div>
           </div>
-
-          <a href="/reminders/add">
+          <a href="/members/add">
             <div class="badge badge-pill">+&nbsp;&nbsp;&nbsp;Add a routine</div>
           </a>
           <div id="edit-icon-wrapper">
@@ -31,15 +30,13 @@
                 <div class="menu-flexbox-wrapper">
                   <div class="d-flex">
                     <img
-                      src="/assets/reminder-task-icon.svg"
                       class="menu-item-image"
+                      src="/assets/reminder-task-icon.svg"
                       alt=""
                     />
                     <div class="ml-2">
-                      <span style="font-size: 12px; font-weight: bold">
-                        Medicines</span
-                      >
-                      <p style="font-size: 10px">
+                      <span class="item-heading"> Medicines</span>
+                      <p class="item-description">
                         Reminds you to take medicines
                       </p>
                     </div>

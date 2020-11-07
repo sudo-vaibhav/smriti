@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <%- require('../../partials/commonHeadBeforeEnd/commonHeadBeforeEnd.ejs')()
+    %>
+  </head>
+  <body>
+    <div class="container">
+      <%- require('../../partials/goBack/goBack.ejs')() %>
+      <main>
+        <form id="add-form" action="/" class="d-flex flex-column">
+          <!-- <div class="col-4 px-1"> -->
+          <label
+            for="member-image-input"
+            class="d-flex flex-column align-items-center"
+          >
+            <img src="/assets/image-input-icon.svg" id="member-image" alt="" />
+            <input
+              type="file"
+              id="member-image-input"
+              required
+              accept=".png,.jpg,.jpeg"
+            />
+            <span
+              style="align-self: center"
+              id="image-upload-button"
+              class="btn btn-primary my-3"
+              >Upload Image</span
+            >
+          </label>
+          <!-- </div> -->
+          <!-- <div class="col-8 px-1"> -->
+          <!-- <> -->
+          <div class="input-group">
+            <label for="">Name:</label>
+            <input type="text" required />
+          </div>
+          <div class="input-group">
+            <label for="">Description:</label>
+            <input type="text" required />
+          </div>
+          <div class="d-flex justify-content-end mt-4">
+            <a class="btn btn-outline-primary btn-lg px-4">Cancel</a>
+            <button
+              class="btn btn-primary btn-lg px-4 ml-3"
+              id="form-submit-button"
+              disabled
+              type="submit"
+            >
+              Save
+            </button>
+          </div>
+
+          <!-- </div> -->
+        </form>
+      </main>
+    </div>
+  </body>
+</html>

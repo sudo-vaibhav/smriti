@@ -4,32 +4,29 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <%- require('./partials/commonHeadBeforeEnd/commonHeadBeforeEnd.ejs')() %>
   </head>
   <body>
     <div class="container">
-      <header>
-        <div class="row">
-          <div class="col-10">
-            <h5>Good morning, <span class="font-weight-bold">Vaibhav</span></h5>
-            <h6>
-              Saturday, <span class="font-weight-bold">7-November-2020</span>
-            </h6>
-          </div>
-          <div class="col-2">
-            <img src="/assets/profile-icon.svg" alt="" />
-          </div>
+      <header class="container-fluid d-flex justify-content-between">
+        <div>
+          <h6>Good morning, <span class="font-weight-bold">Vaibhav</span></h6>
+          <p>Saturday, <span class="font-weight-bold">7-November-2020</span></p>
         </div>
+
+        <a href="/authenticate">
+          <img src="/assets/profile-icon.svg" alt="" />
+        </a>
       </header>
       <main>
         <div id="primary-actions-container" class="my-2">
-          <span class="badge badge-pill">Suggestions</span>
-          <span class="badge badge-pill">Suggestions Hi</span>
-          <span class="badge badge-pill">Lol</span>
-          <span class="badge badge-pill">Suggestions</span
-          ><span class="badge badge-pill">Suggestions</span
-          ><span class="badge badge-pill">Suggestions</span>
+          <span class="badge badge-pill">Who is this?</span>
+          <span class="badge badge-pill">What is the current timing?</span>
+          <span class="badge badge-pill">Where do I live?</span>
+          <span class="badge badge-pill">Whats my upcoming reminder?</span
+          ><span class="badge badge-pill">Call my caretaker</span>
         </div>
-        <div>
+        <div class="d-flex flex-column align-items-end">
           <div class="card shadow response-card">
             <div class="card-body">
               <h6 class="card-subtitle mb-2 text-muted">Who is this?</h6>
@@ -46,9 +43,14 @@
                   <img src="/assets/ladki.png" class="w-100" alt="" />
                 </div>
               </div>
-              <a href="#" class="btn btn-primary curved">Call this person</a>
+              <a href="#" class="btn btn-outline-primary curved"
+                >Call this person</a
+              >
             </div>
           </div>
+          <span class="badge badge-pill badge-primary chat-message"
+            >Whats my upcoming reminder ?</span
+          >
         </div>
       </main>
       <footer
