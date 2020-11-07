@@ -21,6 +21,10 @@ ____
 
 Alzheimer's disease is one of those diseases which hasn’t seen any cure since the past 100 years , scientist havent found a cure till now the only means to do something which will bring a significant change in community is by providing some aid . The main reason people suffer from alzheimer’s disease is that as we grow old the blood flow to our brain is reduced and hence the blood cells do not recieve ample amount of blood and due to this blood cells start decaying and rupturing our brain cells and hence there it affects the folds of our brain and due to that the memory retention capacity is decreased and therefore we might even stop remembering things which we did this morning 
 
+##### Our Source
+
+<a href="https://imgbb.com/"><img src="https://i.ibb.co/gzZ21sP/image-12.png" alt="image-12" border="0"></a>
+
 ________
 ##### Statistical Analysis
 
@@ -37,9 +41,7 @@ ________
 
 As the alzheimer’s disease is one of those diseases where more than $ 244 billion is spent every year which is more than the gdp of our country and the fact that providing aid to such a multi billion dollar industry  would not only benefit it the customers but even would help us produce a large amount of cash flow which can be actually implemented for further goals and this might sound very fancy and inspiring but there is something which will actually blow your mind cause you might think that buying such a product will be too expensive but trust us when we say that the actuall cost for building the product is as low as $ 30 to $ 50 and as an extra passive income our idea is to have ola or uber as our affiliated partner , so everytime someone books a cab from our app,we get affiliated money from our partner.This not only gives us a passive income but also helps our customer to stand on his own feet   
 
-##### Our Source
 
-<a href="https://imgbb.com/"><img src="https://i.ibb.co/gzZ21sP/image-12.png" alt="image-12" border="0"></a>
 
 _________
 
