@@ -1,14 +1,17 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-
+const WebpackPwaManifest = require('webpack-pwa-manifest');
 module.exports = {
   entry: {
-    index: './src/index.js',
-    authenticate: './src/authenticate/authenticate.js',
-    profile: './src/profile/profile.js',
-    main: './src/main.js',
-    reminders: './src/reminders/reminders.js',
-    serviceWorker: './src/service-worker.js',
+    index: path.join(__dirname, './src/index.js'),
+    authenticate: path.join(__dirname, './src/authenticate/authenticate.js'),
+    profile: path.join(__dirname, './src/profile/profile.js'),
+    main: path.join(__dirname, './src/main.js'),
+    reminders: path.join(__dirname, './src/reminders/reminders.js'),
+    serviceWorker: path.join(__dirname, './src/serviceWorker.js'),
+    members: path.join(__dirname, './src/members/members.js'),
+    remindersAdd: path.join(__dirname, './src/reminders/add/reminders.add.js'),
+    membersAdd: path.join(__dirname, './src/members/add/members.add.js'),
   },
 
   module: {
@@ -28,25 +31,64 @@ module.exports = {
     ],
   },
   plugins: [
+    new WebpackPwaManifest({
+      name: 'Smriti',
+      short_name: 'Smriti',
+      description: 'Alzheimer patient assistant',
+      background_color: '#ffffff',
+      'theme-color': '#ffffff',
+      //   crossorigin: 'use-credentials', //can be null, use-credentials or anonymous
+      icons: [
+        {
+          src: path.resolve('src/assets/icon-1024x1024.png'),
+          sizes: [96, 128, 192, 256, 384, 512, 1024], // multiple sizes
+        },
+        // {
+        //   src: path.resolve('src/assets/large-icon.png'),
+        //   size: '1024x1024', // you can also use the specifications pattern
+        // },
+        {
+          src: path.resolve('src/assets/icon-1024x1024.png'),
+          size: '1024x1024',
+          purpose: 'maskable',
+        },
+      ],
+      //   apple : tr
+    }),
     new HtmlWebpackPlugin({
       template: path.join(__dirname, '/src/index.ejs'),
       filename: path.join(__dirname, '/dist/index.html'),
-      chunks: ['index', 'main'],
+      chunks: ['index', 'main', 'serviceWorker'],
     }),
     new HtmlWebpackPlugin({
       template: path.join(__dirname, '/src/authenticate/index.ejs'),
       filename: path.join(__dirname, '/dist/authenticate/index.html'),
-      chunks: ['authenticate', 'main'],
+      chunks: ['authenticate', 'main', 'serviceWorker'],
     }),
     new HtmlWebpackPlugin({
       template: path.join(__dirname, '/src/profile/index.ejs'),
       filename: path.join(__dirname, '/dist/profile/index.html'),
-      chunks: ['profile', 'main'],
+      chunks: ['profile', 'main', 'serviceWorker'],
     }),
     new HtmlWebpackPlugin({
       template: path.join(__dirname, '/src/reminders/index.ejs'),
       filename: path.join(__dirname, '/dist/reminders/index.html'),
-      chunks: ['reminders', 'main'],
+      chunks: ['reminders', 'main', 'serviceWorker'],
+    }),
+    new HtmlWebpackPlugin({
+      template: path.join(__dirname, '/src/reminders/add/index.ejs'),
+      filename: path.join(__dirname, '/dist/reminders/add/index.html'),
+      chunks: ['remindersAdd', 'main', 'serviceWorker'],
+    }),
+    new HtmlWebpackPlugin({
+      template: path.join(__dirname, '/src/members/index.ejs'),
+      filename: path.join(__dirname, '/dist/members/index.html'),
+      chunks: ['members', 'main', 'serviceWorker'],
+    }),
+    new HtmlWebpackPlugin({
+      template: path.join(__dirname, '/src/members/add/index.ejs'),
+      filename: path.join(__dirname, '/dist/members/add/index.html'),
+      chunks: ['membersAdd', 'main', 'serviceWorker'],
     }),
   ],
 };
