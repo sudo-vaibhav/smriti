@@ -36,6 +36,8 @@ ________
 * 1 in 3 Seniors dies with Alzheimer’s or another dementia. It kills more than Breast Cancer and Prostrate cancer combined.
 * These caregivers provided an estimated 18.6 Billion hours of care valued at nearly $244 Billion Worldwide. For comparison, the Indian domestic pharmaceutical industry is worth 	approximately $20 Billion in 2020
 * A new case is diagnosed every 70 seconds
+
+<a href="https://ibb.co/kqwWCbF"><img src="https://i.ibb.co/r5z1r8J/image-13.png" alt="image-13" border="0"></a>
 ________
 #### Business model
 
