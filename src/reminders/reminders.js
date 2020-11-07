@@ -45,12 +45,21 @@ function populateMenuItems(querySnapshot) {
   });
   const menuUL = document.querySelector('#menu-unordered-list');
   menuUL.innerHTML = listHTML;
-  menuUL.querySelectorAll('.item-delete-icon');
+  menuUL.querySelectorAll('.item-delete-icon').forEach((deleteIcon) => {
+    deleteIcon.addEventListener('click', () => {
+      deleteMenuItem(deleteIcon.dataset['id']);
+    });
+  });
 }
 
-function deleteMenuItem() {
-  db.collection(document.querySelector('#menu-unordered-list'))
-    .doc('DC')
+function deleteMenuItem(id) {
+  const collectionName = document.querySelector('#menu-unordered-list').dataset[
+    'collection'
+  ];
+  db.collection(collectionName)
+    .doc(id)
     .delete()
-    .then(() => {});
+    .then(() => {
+      window.location.href = '/' + collectionName;
+    });
 }
