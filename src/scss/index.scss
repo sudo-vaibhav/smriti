@@ -1,3 +1,4 @@
+@import './colors.scss';
 #primary-actions-container {
   .badge {
     font-size: 12px;
@@ -7,6 +8,11 @@
   }
 }
 .response-card {
+  animation: pushed 0.5s ease-in-out;
+  margin: 0.75rem 0;
+  &.inverted {
+    background: $primary;
+  }
   .card-body {
     padding: 1.5rem 1rem;
     .card-subtitle {
@@ -22,5 +28,12 @@
     .btn-outline-primary {
       font-size: 10px;
     }
+  }
+}
+
+@keyframes pushed {
+  from {
+    transform: translate(0, 50px);
+    opacity: 0;
   }
 }
