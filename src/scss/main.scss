@@ -29,7 +29,17 @@ body {
   padding: 0.5rem 1rem;
   margin: 0.25rem;
   background: transparent;
-  color: #121212;
-  opacity: 60%;
-  border: 1px solid rgba(18, 18, 18, 0.8);
+  color: $grey;
+  border: 1px solid $grey;
+
+  &.badge-primary {
+    background: $primary;
+    color: white;
+    &.chat-message {
+      font-weight: 400;
+      margin: 1.5rem 0;
+      align-self: flex-end;
+      border-width: 0;
+    }
+  }
 }

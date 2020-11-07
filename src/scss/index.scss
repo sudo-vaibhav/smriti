@@ -1,3 +1,11 @@
+#primary-actions-container {
+  .badge {
+    font-size: 12px;
+    font-weight: 400;
+    padding: 5px 10px;
+    margin: 4px 2px;
+  }
+}
 .response-card {
   .card-body {
     padding: 1.5rem 1rem;
@@ -11,7 +19,7 @@
       font-size: 18px;
       font-weight: bold;
     }
-    .btn-primary {
+    .btn-outline-primary {
       font-size: 10px;
     }
   }

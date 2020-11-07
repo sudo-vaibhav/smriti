@@ -1,0 +1,28 @@
+#menu-unordered-list {
+  list-style: none;
+  .item-heading {
+    font-size: 12px;
+    font-weight: bold;
+  }
+  .item-description {
+    font-size: 10px;
+  }
+  .menu-item-image {
+    height: 38px;
+    width: 38px;
+    border-radius: 50%;
+  }
+  li {
+    .menu-flexbox-wrapper {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+}
+
+#edit-icon-wrapper {
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
+  margin: 1rem 0;
+}

@@ -1,0 +1,27 @@
+@import './colors.scss';
+#add-form {
+  .input-group {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem 0;
+    label {
+      color: $grey;
+    }
+    textarea,
+    input {
+      background: transparent;
+      border-radius: 5px;
+      border-color: $grey;
+      padding: 0.5rem;
+    }
+  }
+  #member-image {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+  }
+  input[type='file'] {
+    position: fixed;
+    left: -1000000px;
+  }
+}
