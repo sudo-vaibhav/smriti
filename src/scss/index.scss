@@ -7,26 +7,36 @@
     margin: 4px 2px;
   }
 }
-.response-card {
-  animation: pushed 0.5s ease-in-out;
-  margin: 0.75rem 0;
-  &.inverted {
-    background: $primary;
-  }
-  .card-body {
-    padding: 1.5rem 1rem;
-    .card-subtitle {
-      font-size: 10px;
+#messages-container {
+  margin-bottom: 7rem;
+  .response-card {
+    animation: pushed 0.5s ease-in-out;
+    margin: 0.75rem 0;
+    &.inverted {
+      background: $primary;
+      .card-body {
+        color: white;
+        .card-subtitle {
+          color: white;
+        }
+      }
     }
-    .card-text {
-      font-size: 10px;
-    }
-    .card-title {
-      font-size: 18px;
-      font-weight: bold;
-    }
-    .btn-outline-primary {
-      font-size: 10px;
+    .card-body {
+      padding: 1.5rem 1rem;
+      .card-subtitle {
+        font-size: 10px;
+        color: $grey;
+      }
+      .card-text {
+        font-size: 10px;
+      }
+      .card-title {
+        font-size: 18px;
+        font-weight: bold;
+      }
+      .btn-outline-primary {
+        font-size: 10px;
+      }
     }
   }
 }

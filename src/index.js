@@ -5,6 +5,7 @@ import './scss/index.scss';
 import './assets/time-icon.svg';
 import './assets/phone-icon.svg';
 import './assets/home-icon.svg';
+import './assets/reminder-blue-icon.svg';
 import pushCard from './js/pushCard';
 
 window.addEventListener('DOMContentLoaded', () => {
