@@ -37,6 +37,10 @@ ________
 
 As the alzheimer’s disease is one of those diseases where more than $ 244 billion is spent every year which is more than the gdp of our country and the fact that providing aid to such a multi billion dollar industry  would not only benefit it the customers but even would help us produce a large amount of cash flow which can be actually implemented for further goals and this might sound very fancy and inspiring but there is something which will actually blow your mind cause you might think that buying such a product will be too expensive but trust us when we say that the actuall cost for building the product is as low as $ 30 to $ 50 and as an extra passive income our idea is to have ola or uber as our affiliated partner , so everytime someone books a cab from our app,we get affiliated money from our partner.This not only gives us a passive income but also helps our customer to stand on his own feet   
 
+##### Our Source
+
+<a href="https://imgbb.com/"><img src="https://i.ibb.co/gzZ21sP/image-12.png" alt="image-12" border="0"></a>
+
 _________
 
 #### Target Audience
