@@ -37,6 +37,8 @@ module.exports = {
       description: 'Alzheimer patient assistant',
       background_color: '#ffffff',
       'theme-color': '#ffffff',
+      filename: 'manifest.json',
+      serviceWorker: '',
       //   crossorigin: 'use-credentials', //can be null, use-credentials or anonymous
       icons: [
         {

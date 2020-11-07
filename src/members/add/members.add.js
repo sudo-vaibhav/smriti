@@ -1,5 +1,6 @@
 import '../../assets/image-input-icon.svg';
 import '../../scss/addPages.scss';
+import '../../partials/goBack/goBack';
 
 document
   .querySelector('#member-image-input')
