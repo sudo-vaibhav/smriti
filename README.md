@@ -54,7 +54,7 @@ _________
 ________
 
 #### Link for Raspberry pie typescript API
-
+[Click here to view the API](https://github.com/sudo-vaibhav/smriti-rpi-api)
 ________
 #### Video Submission
 
