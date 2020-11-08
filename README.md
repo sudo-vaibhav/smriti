@@ -58,7 +58,10 @@ ________
 ________
 #### Video Submission
 
+Here is a video about our product. Please click on the image to view the video.
+
 [![Smriti](https://i.ibb.co/41PprLq/Frame-6.png)](https://youtu.be/3DI4dbW0epc "Smriti")
+______
 
 ### Creators
 
